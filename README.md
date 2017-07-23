@@ -10,4 +10,6 @@ Has a nice curses based progress_bar with multiple lines
 * aiofiles
 * blessings
 
+Only works on POSIX systems (Linux, BSD, ios, etc...)
+
 ![](screenshot.png)
