@@ -138,9 +138,14 @@ async def run(args):
 
     
 def main():
-    p = argparse.ArgumentParser(prog='aioget', description="Downloads concurrently a list of files")
+    p = argparse.ArgumentParser(prog='aioget', 
+        description="Downloads concurrently a list of files")
     p.add_argument("urls", help="Download links", nargs='*')
-    p.add_argument("-f", "--from_file", metavar='FILE', type=str, help="Reads urls from a file")
+    p.add_argument("-f", 
+                   "--from_file", 
+                   metavar='FILE', 
+                   type=str, 
+                   help="Reads urls from a file")
     args = p.parse_args()
     
     if args.from_file:
