@@ -5,9 +5,9 @@ Uses aiohttp for assyncronous downloads, aiofiles for nonblocking filesystem ope
 Has a nice curses based progress_bar with multiple lines
 
 # Requirements
-python >= 3.5
-aiohttp
-aiofiles
-blessings
+* python >= 3.5
+* aiohttp
+* aiofiles
+* blessings
 
 ![](screenshot.png)
