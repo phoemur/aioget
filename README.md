@@ -12,4 +12,12 @@ Has a nice curses based progress_bar with multiple lines
 
 Only works on POSIX systems (Linux, BSD, ios, etc...)
 
+# Usage
+
+    aioget "url1" "url2" ... "url n"
+    
+or read urls from file:
+    
+    aioget -f urllist.txt
+
 ![](screenshot.png)
