@@ -81,7 +81,7 @@ async def download(session, link):
             # Loop that reads in chunks, calculates speed and 
             # print the progress
             while True:
-                chunk = await resp.content.read(1024)
+                chunk = await resp.content.read(4096)
                 if not chunk:
                     break
                 
