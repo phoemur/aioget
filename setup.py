@@ -5,10 +5,10 @@ if not sys.version_info[0] >= 3 and sys.version_info[1] >=5:
     sys.exit('Requires Python >= 3.5')
 
 setup(name='aioget',
-      version='0.2',
+      version='0.2.1',
       author='Fernando Giannasi <phoemur@gmail.com>',
       url='https://github.com/phoemur/aioget',
-      download_url = 'https://github.com/phoemur/aioget/tarball/0.2',
+      download_url = 'https://github.com/phoemur/aioget/tarball/0.2.1',
 
       description="Async io command line download utility written in python",
       license="Unlicense",

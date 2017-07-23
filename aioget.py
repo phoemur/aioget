@@ -13,7 +13,7 @@ from blessings import Terminal
 from functools import wraps
 
 
-__version__ = '0.2'
+__version__ = '0.2.1'
 term = Terminal()
 wrap = dict()
 
@@ -137,7 +137,7 @@ async def run(args):
         await responses
 
     
-if __name__ == '__main__':
+def main():
     p = argparse.ArgumentParser(prog='aioget', description="Downloads concurrently a list of files")
     p.add_argument("urls", help="Download links", nargs='*')
     p.add_argument("-f", "--from_file", metavar='FILE', type=str, help="Reads urls from a file")
@@ -153,3 +153,6 @@ if __name__ == '__main__':
     print(term.clear)
     loop = asyncio.get_event_loop()
     loop.run_until_complete(asyncio.ensure_future(run(links)))
+
+if __name__ == '__main__':
+    main()
