@@ -115,15 +115,15 @@ async def download(session, link):
                 await fh.write(chunk)
                 with term.location(0, wrap[filename]), term.hidden_cursor():
                     print("{0} {1}% [{2}{3}{4}] {5}/{6} {7} eta{8}".format(
-                                 filename,
-                                 str(percent).center(4),
-                                 '=' * (shaded - 1),
-                                 '>',
-                                 ' ' * (AVAIL_WIDTH - shaded),
-                                 current,
-                                 total,
-                                 (approximate_size(speed) + '/s').center(11),
-                                 eta.center(10)))
+                        filename,
+                        str(percent).center(4),
+                        '=' * (shaded - 1),
+                        '>',
+                        ' ' * (AVAIL_WIDTH - shaded),
+                        current,
+                        total,
+                        (approximate_size(speed) + '/s').center(11),
+                        eta.center(10)))
 
 
 async def run(args):
@@ -166,6 +166,7 @@ def main():
     print(term.clear)
     loop = asyncio.get_event_loop()
     loop.run_until_complete(asyncio.ensure_future(run(links)))
+
 
 if __name__ == '__main__':
     main()
