@@ -14,7 +14,7 @@ setup(name='aioget',
       license="Unlicense",
       classifiers=[
         'Environment :: Console',
-        'License :: OSI Approved :: MIT License',
+        'License :: Public Domain ',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
